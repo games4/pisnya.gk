@@ -53,7 +53,7 @@
     </section>
     
     <section class="reference"> <!-- reference - довідка -->
-      <h2 class="reference__heading">Трохи інформації</h2>
+      <h2 class="section__title">Трохи інформації</h2>
       <a class="btn" href="#" title="Відкрити довідник">Довідник</a>
       <dl class="reference__list">
         <dt class="reference__term">
@@ -76,7 +76,7 @@
     </section>
 
     <section class="reviews" id="reviews">
-      <h2 class="reviews__heading">Нам пишуть</h2>
+      <h2 class="section__title">Нам пишуть</h2>
       <a class="btn" href="#" title="Переглянути всі відгуки">Всі відгуки</a>
       <div class="reviews__list">
         <blockquote class="review__item">
@@ -92,37 +92,40 @@
     
     <section class="hits" id="hits">
       <!-- слайдер -->
-      <h2 class="hits__header">Лідери хіт параду</h2>
+      <h2 class="section__title">Лідери хіт параду</h2>
       <a class="btn" href="#" title="Подивитися інші категорії">Категорії</a>
       <ul class="hits__list">
         <li class="hits__item">
           <img src="img/category1.jpg" alt="Категорія Поп-рок: Окекан Ельзи - Не йди" width="306" height="206">
-          <h3 class="category__title">Поп-рок / Окекан Ельзи - Не йди</h3>
-          <b>Переглядів: 400 / Рейтинг: 5.5</b>
+          <h3 class="hits__title">Поп-рок / Окекан Ельзи - Не йди</h3>
+          <b>Рейтинг: 5.5 / Голосів: 400</b>
+          <a class="btn" href="#">Подробиці</a>
           <a class="btn" href="#">Оцінити</a>
         </li>
         <li class="hits__item">
           <img src="img/category2.jpg" alt="Категорія Рок - альтернатива: Брутто - Вечірнє сонце" width="306" height="206">
-          <h3>Рок - альтернатива / Брутто - Вечірнє сонце</h3>
-          <b>Переглядів: 500 / Рейтинг: 6.5</b>
+          <h3 class="hits__title">Рок - альтернатива / Брутто - Вечірнє сонце</h3>
+          <b>Рейтинг: 6.5 / Голосів: 500</b>
+          <a class="btn" href="#">Подробиці</a>
           <a class="btn" href="#">Оцінити</a>
         </li>
         <li class="hits__item">
           <img src="img/category3.jpg" alt="Категорія Електронна музика: 5-вимір - Містолінії" width="306" height="206">
-          <h3>Електронна музика / 5-вимір - Містолінії</h3>
-          <b>Переглядів: 300 / Рейтинг: 6.0</b>
+          <h3 class="hits__title">Електронна музика / 5-вимір - Містолінії</h3>
+          <b>Рейтинг: 6.0 / Голосів: 300</b>
+          <a class="btn" href="#">Подробиці</a>
           <a class="btn" href="#">Оцінити</a>
         </li>
       </ul>
     </section>
     
     <section class="shortlist" id="shortlist">
-      <h2 class="shortlist__header">Гаряча сімка</h2>
+      <h2 class="section__title">Гаряча сімка</h2>
       <a class="btn" href="#" title="Взяти участь у голосуванні">Рейтинги</a>
       <table class="shortlist__list">
         <tr class="shortlist__item">
           <th class="shortlist__number">Місце</th>
-          <th >Композиція</th>
+          <th>Композиція</th>
           <th>Рейтинг</th>
           <th>Голосів</th>
         </tr>
@@ -185,19 +188,19 @@
       </table>
     </section>
     
-    <div class="fidback">
-      <h2 class="hits__header">Бажаєте взяти участь</h2>
-      <p class="feedback-tip">Реєструйтеся і просувайте на вершину найкращі пісні</p>
-      <form class="feedback-form" action="/mail" method="post">
-        <div class="feedback-form-group">
+    <div class="feedback">
+      <h2 class="section__title">Бажаєте взяти участь</h2>
+      <p class="feedback__tip">Реєструйтеся і просувайте на вершину найкращі пісні</p>
+      <form class="feedback__form" action="/mail" method="post">
+        <div class="feedback__form-group">
           <label for="fullname">Представтесь, будь ласка:</label>
           <input type="text" name="fullname" id="fullname">
         </div>
-        <div class="feedback-form-group">
+        <div class="feedback__form-group">
           <label for="phone">Контактний телефон:</label>
           <input type="text" name="phone" id="phone">
         </div>
-        <div class="feedback-form-group">
+        <div class="feedback__form-group">
           <label for="email">Електронна пошта:</label>
           <input type="text" name="email" id="email">
         </div>
@@ -207,7 +210,7 @@
             Даю згоду на отримання матеріалів сайту
           </label>
         </div>
-        <div class="feedback-form-group">
+        <div class="feedback__form-group">
           <label for="topic">Тема звернення:</label>
           <select name="topic" id="topic">
             <option value="1">Пропозиції про співпрацю</option>
@@ -215,12 +218,12 @@
             <option value="3">Застереження авторських прав</option>
           </select>
         </div>
-        <div class="feedback-form-group">
+        <div class="feedback__form-group">
           <label for="message">Текст звернення:</label>
           <textarea type="text" name="message" id="message">
           </textarea>
         </div>
-        <input type="supmit" class="btn" value="Відправити">
+        <input type="submit" class="btn" value="Відправити">
       </form>
     </div>
     
