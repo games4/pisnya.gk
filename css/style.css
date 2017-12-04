@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Arial", sans-serif;
+  color: #404040;
+  background-color: white;
+}
+
+.page-header,
+.page-footer {
+  padding: 10px;
+  background-color: #e11932;
+/*  background-color: #EE2A4B;*/
+  color: #ffc8d9;
+}
+
+.page-header {
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__list li {
+  text-transform: uppercase;
+}
+
+.main-nav__list a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-nav__list a:hover {
+  text-decoration: underline;
+}
+
+.main-nav__list a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn {
+  color: #7a0026;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #b4003c;
+}
+
+.btn:active {
+  color: rgba(100, 0, 31, 0.3);
+}
+
+.page-header__promo {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  font-family: "Georgia", serif;
+  text-align: center;
+}
+
+.page-header__promo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* .features ul */
+.features__list {
+  list-style: none;
+}
+
+.features__item {
+  padding-top: 90px;
+  text-align: center;
+  border-left: 1px solid #d9d9d9;
+}
+
+.features__item:first-child {
+  border-left: none;
+}
+
+.features__title {
+  font-family: "Georgia", serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #7a0026;
+}
+
+.features__icon--culture {
+  background: url("../img/culture.png") no-repeat top center;
+}
+
+.features__icon--art {
+  background: url("../img/art.png") no-repeat top center;
+}
+
+.features__icon--spirituality {
+  background: url("../img/spirituality.png") no-repeat top center;
+}
+
+/* .features__item p */
+.features__description {
+  font-size: 16px;
+}
+
+/* reference - довідка */ 
+.reference {
+  background-color: #f2f2f2;
+}
+
+.section__title {
+  font-family: "Georgia", serif;
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: bold;
+  color: #7a0026;
+}
+
+.reference__title {
+  font-size: 24px;
+}
+
+.reference__source {
+  font-size: 16px;
+  color: #666666;
+  font-style: italic;
+}
+
+.reference__source a {
+  color: #7a0026;
+}
+
+.reference__source a:hover {
+  color: #b4003c;
+  font-style: italic;}
+
+.reference__source a:active {
+  color: rgba(100, 0, 31, 0.3);
+}
+
+/* .reference dd { */
+.reference__description {
+  font-size: 16px;
+}
+
+/* .reference img { */
+.reference__description img {
+  border-radius: 5px;
+}
+
+.review__item {
+  font-size: 16px;
+  border-left: 3px solid #7a0026;
+}
+
+.review__author {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.hits {
+  background-color: #f2f2f2;
+}
+
+.hits__item {
+  font-size: 16px;
+}
+
+/* .hits__item h3 */
+.hits__title {
+  font-size: 16px;
+  color: #000000;
+}
+
+.shortlist__list {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 30px;
+}
+
+.shortlist__list th {
+  font-weight: normal;
+  text-align: left;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.shortlist__list td {
+  border: 1px solid #333333;
+  border-color: #d8d8d8;
+}
+
+.shortlist__list td, 
+.shortlist__list th {
+		padding: 5px 10px;
+}
+
+.shortlist__list .shortlist__number {
+  text-align: center;
+}
+
+.shortlist__list .shortlist__name {
+  font-weight: bold;
+  color: #000000;
+}
+
+.feedback__form {
+  padding-right: 390px;
+  background-image: url("../img/write.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 40px;
+}
+
+
+.feedback__tip {
+  font-size: 16px;
+}
+
+.feedback__form-group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.feedback__form-group label {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.feedback__form input[type="text"],
+.feedback__form select,
+.feedback__form textarea {
+  font: inherit; /* наследование текстовых свойств родителя: цвет, параметры шрифта. в нашем случае БОДИ */
+  color: inherit;
+  border: 2px solid #d5d5d5;
+}
+
+.feedback__form input[type="text"]:hover,
+.feedback__form select:hover,
+.feedback__form textarea:hover {
+  border-color: #bebebe;
+}
+
+.feedback__form input[type="text"]:focus,
+.feedback__form select:focus,
+.feedback__form textarea:focus {
+  border-color: #b4003c;
+}
+
+.checkbox-area {
+  border-bottom: 1px solid  #d5d5d5;   
+}
+
+.page-footer {
+  margin-top: 20px;
+}
+
+.page-footer__nav,
+.page-footer__bottom {
+  border-top: 1px solid #5e5e5e;    
+}
+
+/*.footer-menu h3 */
+.page-footer__title {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Georgia", serif;
+  color: #7a0026;
+}
+
+/* .footer-menu ul */
+.page-footer__list {
+  list-style: none;
+}
+
+/* .footer-menu a  */
+.page-footer__list a {
+  font-size: 16px;
+  color: #ffdce7;
+  text-decoration: none;
+}
+
+/* .footer-menu a:hover */
+.page-footer__list a:hover {
+  color: #ffffff;
+}
+
+/* .footer-menu a:active */ 
+.page-footer__list a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* .page-footer__bottom__social b */
+.social__title {
+  font-size: 24px;
+  font-family: "Georgia", serif;
+  color: #7a0026;
+}
+
+.social__list {
+  list-style: none;
+}
+
+.social__link {
+  color: #ffffff;
+}
+
+.page-footer__copyright {
+  color: #ffffff; 
+  text-transform: uppercase;
+}
+
+.page-footer__copyright a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.page-footer__copyright a:hover {
+  text-decoration: underline;    
+}
+
+.page-footer__copyright a:active {
+  color: rgba(255, 255, 255, 0.3);    
+}
