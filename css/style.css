@@ -27,6 +27,62 @@ body {
     margin: 0 auto;
 }
 
+.btn {
+  display: inline-block;
+  width: 146px;
+  padding: 10px;
+  font: inherit;
+  vertical-align: top;
+  text-align: center;
+  
+  color: #7a0026;
+  text-transform: uppercase;
+  text-decoration: none;
+  word-wrap: break-word;
+  
+  border: 2px solid #7a0026;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  color: #b4003c;
+  border-color: #b4003c;
+  
+  color: #dc4b78;
+  border-color: #dc4b78;
+
+}
+
+.btn:active {
+  color: rgba(100, 0, 31, 0.3);
+  border-color: #b4003c;
+  
+/*  color: #dc4b78;
+  border-color: #dc4b78;*/
+  color: rgba(220,75,120,0.3);
+  border-color: rgba(220,75,120,0.3);
+}
+
+.btn__quick-vote {
+  margin-top: 6px;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn__quick-vote:hover {
+  color: #7a0026;
+  
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+.btn__quick-vote:active {
+  color: rgba(122, 0, 38, 0.3);
+
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
 .page-header,
 .page-footer {
 /*  padding: 10px;*/
@@ -55,8 +111,6 @@ body {
 .page-header__logo {
   width: 210px;
   height: 75px;
-  
-  background-color: rgba(0, 255, 0, 0.1); 
 }
 
 .page-header__logo-image {
@@ -71,8 +125,6 @@ body {
 /*  margin-left: 125px;
 
   width: 520px; */
-  
-  background-color: rgba(0, 255, 0, 0.1); 
 }
 
 .site-list {
@@ -109,32 +161,6 @@ body {
 /*  margin-left: 180px;*/
 }
 
-.btn {
-  display: inline-block;
-  width: 146px;
-  padding: 10px;
-  font: inherit;
-  vertical-align: top;
-  text-align: center;
-  
-  color: #7a0026;
-  text-transform: uppercase;
-  text-decoration: none;
-  word-wrap: break-word;
-  
-  border: 2px solid #7a0026;
-  border-radius: 2px;
-}
-
-.btn:hover {
-  color: #b4003c;
-  border-color: #b4003c;
-}
-
-.btn:active {
-  color: rgba(100, 0, 31, 0.3);
-  border-color: #b4003c;
-}
 
 .page-header__promo {
   font-weight: bold;
@@ -144,11 +170,6 @@ body {
   text-align: center;
 }
 
-.btn__quick-vote {
-  margin-top: 6px;
-  color: #ffffff;
-  border-color: #ffffff;
-}
 
 .page-header__promo a {
   color: #ffffff;
