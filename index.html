@@ -18,10 +18,10 @@
               <a href="#catalog">Каталог</a>
             </li>
             <li class="site-list__item">
-              <a href="#reating">Рейтинг</a>
+              <a href="#shortlist">Рейтинг</a>
             </li>
             <li class="site-list__item">
-              <a href="#reviews">Відгуки</a>
+              <a href="#reference">Довідник</a>
             </li>
           </ul>
           <div class="user-up">
@@ -54,10 +54,10 @@
       </div>
     </section>
     
-    <section class="reference"> <!-- reference - довідка -->
+    <section class="reference" id="reference"> <!-- reference, reference book - довідка - довідник -->
       <div class="container">
         <h2 class="section__title">Трохи інформації</h2>
-        <a class="btn" href="#" title="Відкрити довідник">Довідник</a>
+        <a class="btn reference__all-link" href="#" title="Відкрити довідник">Довідник</a>
         <dl class="reference__list">
           <dt class="reference__term">
             <h3 class="reference__title">Українська естрадна пісня</h3>
@@ -82,7 +82,7 @@
     <section class="reviews" id="reviews">
       <div class="container">
         <h2 class="section__title">Нам пишуть</h2>
-        <a class="btn" href="#" title="Переглянути всі відгуки">Всі відгуки</a>
+        <a class="btn reviews__all--link" href="#" title="Переглянути всі відгуки">Всі відгуки</a>
         <div class="reviews__list">
           <blockquote class="review__item">
             <p>Дякую авторам і зозробникам сайту "Українська пісня", завдяки якому знаходжу свої улюблені і відкриваю для себе нові класні українські пісні </p>
@@ -100,28 +100,39 @@
       <div class="container">
         <!-- слайдер -->
         <h2 class="section__title">Лідери хіт параду</h2>
-        <a class="btn" href="#" title="Подивитися інші категорії">Категорії</a>
+        <a class="btn hits__all-link" href="#" title="Подивитися інші категорії">Категорії</a>
         <ul class="hits__list">
           <li class="hits__item">
             <img src="img/category1.jpg" alt="Категорія Поп-рок: Окекан Ельзи - Не йди" width="306" height="206">
-            <h3 class="hits__title">Поп-рок / Окекан Ельзи - Не йди</h3>
-            <b>Рейтинг: 5.5 / Голосів: 400</b>
-            <a class="btn" href="#">Подробиці</a>
-            <a class="btn" href="#">Оцінити</a>
+            <div class="hits__category">Поп-рок</div>
+            <h3 class="hits__title">Окекан Ельзи - Не йди</h3>
+            <!-- <p class="hits__reating">Рейтинг: <b> 5.5</b> Голосів: <b>300</b></p> -->
+            <p class="hits__reating"><span>голосів 5 260</span><span>рейтинг 5.5</span></p>
+            <p class="hits__control">
+              <a class="btn" href="#">Подробиці</a>
+              <a class="btn" href="#">Оцінити</a>
+            </p>
           </li>
           <li class="hits__item">
             <img src="img/category2.jpg" alt="Категорія Рок - альтернатива: Брутто - Вечірнє сонце" width="306" height="206">
-            <h3 class="hits__title">Рок - альтернатива / Брутто - Вечірнє сонце</h3>
-            <b>Рейтинг: 6.5 / Голосів: 500</b>
-            <a class="btn" href="#">Подробиці</a>
-            <a class="btn" href="#">Оцінити</a>
+            <div class="hits__category">Рок-альтернатива</div>
+            <h3 class="hits__title">Брутто - Вечірнє сонце</h3>
+            <p class="hits__reating"><span>голосів 515</span><span>рейтинг 6.5</span></p>
+            <p class="hits__control">
+              <a class="btn" href="#">Подробиці</a>
+              <a class="btn" href="#">Оцінити</a>
+            </p>
           </li>
           <li class="hits__item">
             <img src="img/category3.jpg" alt="Категорія Електронна музика: 5-вимір - Містолінії" width="306" height="206">
-            <h3 class="hits__title">Електронна музика / 5-вимір - Містолінії</h3>
-            <b>Рейтинг: 6.0 / Голосів: 300</b>
-            <a class="btn" href="#">Подробиці</a>
-            <a class="btn" href="#">Оцінити</a>
+            <div class="hits__category">Електронна музика</div>
+            <h3 class="hits__title">5-вимір - Містолінії</h3>
+            <!-- <p class="hits__reating">рейтинг 6.5 голосів 300</p> -->
+            <p class="hits__reating"><span>голосів 398</span><span>рейтинг 6.0</span></p>
+            <p class="hits__control">
+              <a class="btn" href="#">Подробиці</a>
+              <a class="btn" href="#">Оцінити</a>
+            </p>
           </li>
         </ul>
       </div>
@@ -130,7 +141,7 @@
     <section class="shortlist" id="shortlist">
       <div class="container">
         <h2 class="section__title">Гаряча сімка</h2>
-        <a class="btn" href="#" title="Взяти участь у голосуванні">Рейтинги</a>
+        <a class="btn shortlist__all-link" href="#" title="Взяти участь у голосуванні">Рейтинги</a>
         <table class="shortlist__list">
           <tr class="shortlist__item">
             <th class="shortlist__number">Місце</th>
@@ -143,56 +154,56 @@
             <td class="shortlist__name">
               <a>Вечірнє сонце - Брутто</a>
             </td>
-            <td>6.5</td>
-            <td>500</td>
+            <td class="shortlist__reating">6.5</td>
+            <td class="shortlist__votes">500</td>
           </tr>
           <tr class="shortlist__item">
             <td class="shortlist__number">2.</td>
             <td class="shortlist__name">
               <a>Журавлi - THE HARDKISS</a>
             </td>
-            <td>6.0</td>
-            <td>450</td>
+            <td class="shortlist__reating">6.0</td>
+            <td class="shortlist__votes">450</td>
           </tr>
           <tr class="shortlist__item">
             <td class="shortlist__number">3.</td>
             <td class="shortlist__name">
               <a>Любов жива - Павло Табаков</a>
             </td>
-            <td>6.0</td>
-            <td>450</td>
+            <td class="shortlist__reating">6.0</td>
+            <td class="shortlist__votes">450</td>
           </tr>
            <tr class="shortlist__item">
             <td class="shortlist__number">4.</td>
             <td class="shortlist__name">
               <a>Добре з тобою - TARABAROVA</a>
             </td>
-            <td>6.0</td>
-            <td>450</td>
+            <td class="shortlist__reating">6.0</td>
+            <td class="shortlist__votes">450</td>
           </tr>
           <tr class="shortlist__item">
             <td class="shortlist__number">5.</td>
             <td class="shortlist__name">
               <a>Кораблі - Катерина Гуменюк</a>
             </td>
-            <td>6.0</td>
-            <td>450</td>
+            <td class="shortlist__reating">6.0</td>
+            <td class="shortlist__votes">450</td>
           </tr>
           <tr class="shortlist__item">
             <td class="shortlist__number">6.</td>
             <td class="shortlist__name">
               <a>Шампанські очі - PianoБой</a>
             </td>
-            <td>6.0</td>
-            <td>400</td>
+            <td class="shortlist__reating">6.0</td>
+            <td class="shortlist__votes">400</td>
           </tr>
           <tr class="shortlist__item">
             <td class="shortlist__number">7.</td>
             <td class="shortlist__name">
               <a>До весни - Kishe</a>
             </td>
-            <td>6.0</td>
-            <td>350</td>
+            <td class="shortlist__reating">6.0</td>
+            <td class="shortlist__votes">350</td>
           </tr>
         </table>
       </div>
