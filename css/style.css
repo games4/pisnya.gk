@@ -615,7 +615,7 @@ body {
   
   background-image: url("../img/write.jpg");
   background-repeat: no-repeat;
-  background-position: 100% 40px;
+  background-position: 100% 30px;
 }
 
 .feedback__form-group {
@@ -837,6 +837,7 @@ body {
 
 .page-footer__copyright {
 /*  width: 236px;*/
+  margin-top: 17px;
 
   color: #ffffff; 
   text-transform: uppercase;
@@ -852,5 +853,17 @@ body {
 }
 
 .page-footer__copyright a:active {
-  color: rgba(255, 255, 255, 0.3);    
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page-footer__copyright .heart {
+  display: inline-block;
+  width: 27px;
+  height: 24px;
+  font-size: 0;
+  vertical-align: middle;
+  
+  background-image: url("../img/sprite.png");
+  background-position: -5px -419px;
+  background-repeat: no-repeat;
 }
