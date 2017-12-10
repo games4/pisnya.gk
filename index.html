@@ -211,22 +211,24 @@
     
     <section class="feedback">
       <div class="container">
-        <h2 class="section__title">Бажаєте взяти участь</h2>
-        <p class="feedback__tip">Реєструйтеся і просувайте на вершину найкращі пісні</p>
+        <h2 class="section__title">Бажаєте взяти участь!?</h2>
+        <p class="feedback__tip">Реєструйтеся та просувайте на вершину найкращі пісні!</p>
         <form class="feedback__form" action="/mail" method="post">
           <div class="feedback__form-group">
             <label for="fullname">Представтесь, будь ласка:</label>
-            <input type="text" name="fullname" id="fullname">
+            <input type="text" name="fullname" id="fullname" placeholder="Ім'я та призвище">
           </div>
-          <div class="feedback__form-group">
-            <label for="phone">Контактний телефон:</label>
-            <input type="text" name="phone" id="phone">
+          <div class="feedback__columns">
+            <div class="feedback__form-group feedback__column--left">
+              <label for="phone">Контактний телефон:</label>
+              <input type="text" name="phone" id="phone" placeholder="+38 0XX XXX-XX-XX">
+            </div>
+            <div class="feedback__form-group feedback__column--right">
+              <label for="email">Електронна пошта:</label>
+              <input type="text" name="email" id="email" placeholder="E-mail">
+            </div>
           </div>
-          <div class="feedback__form-group">
-            <label for="email">Електронна пошта:</label>
-            <input type="text" name="email" id="email">
-          </div>
-          <div class="checkbox-area">
+          <div class="feedback__checkbox-area">
             <label>
               <input type="checkbox" name="supscription">
               Даю згоду на отримання матеріалів сайту
@@ -242,7 +244,7 @@
           </div>
           <div class="feedback__form-group">
             <label for="message">Текст звернення:</label>
-            <textarea type="text" name="message" id="message">
+            <textarea type="text" name="message" id="message" placeholder="Введіть текст Вашого звернення">
             </textarea>
           </div>
           <input type="submit" class="btn" value="Відправити">
@@ -316,17 +318,9 @@
         <section class="page-footer__bottom">
           <div class="page-footer__social social">
             <b class="social__title">Приєднуйтесь до нас!</b>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vk" href="https://vk.com/pisnya">Вконтакті</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--fb" href="https://facebook.com/pisnya">Фейсбук</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--in" href="https://instagram.com/pisnya">Інстаграм</a>
-              </li>
-            </ul>
+              <a class="social__link social__link--vk" href="https://vk.com/pisnya">Вконтакті</a>
+              <a class="social__link social__link--fb" href="https://facebook.com/pisnya">Фейсбук</a>
+              <a class="social__link social__link--in" href="https://instagram.com/pisnya">Інстаграм</a>
           </div>
           <div class="page-footer__copyright">
             <a href="https://games4.github.io/">Із Києва</a> з <span class="heart">любов'ю!</span>
